@@ -11,6 +11,7 @@ const config = {
   testMatch: ['**/__tests__/**/*.js(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.mjs?$': 'babel-jest',
   },
   setupFilesAfterEnv: ['<rootDir>/src/__tests__/setup.js'],
   timers: 'modern', // Isso habilita a modernização dos temporizadores para Jest 27+
